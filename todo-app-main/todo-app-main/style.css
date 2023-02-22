@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  overflow-x: hidden;
+  background-color: hsl(236, 33%, 92%);
+}
+.todo {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  transform: translate(5%, -500%);
+  margin-inline: auto;
+}
+.inputContainer {
+  transform: translate(5%, -230%);
+}
+#checkbox {
+  transform: translateY(210%);
+  margin-left: 5%;
+}
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid gainsboro;
+  outline: none;
+
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+input[type="checkbox"]::before {
+  content: "\2714";
+  display: block;
+  position: absolute;
+  font-size: 14px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  visibility: hidden;
+}
+
+input[type="checkbox"]:checked::before {
+  visibility: visible;
+}
+
+.text {
+  margin-inline: auto;
+  width: 250px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  color: hsl(233, 11%, 84%);
+  padding-left: 46px;
+  font-size: 18px;
+}
+.myDiv {
+  padding: 3px;
+  margin-bottom: 2%;
+  margin-inline: auto;
+  width: 250px;
+  height: 50px;
+  transform: translate(1%, -250%);
+  border-radius: 8px;
+  border: none;
+  background-color: white;
+  padding-left: 46px;
+  font-size: 18px;
+}
+.inputCheck {
+  transform: translate(-200%, -300%);
+}
+.toggle {
+  text-decoration: line-through;
+}
+.hOne {
+  transform: translateY(-50%);
+  color: hsl(236, 9%, 61%);
+}
+.secondDiv {
+  padding: 1%;
+  margin-bottom: 2%;
+  border-bottom: 2px solid black;
+  margin-inline: auto;
+  width: 250px;
+  height: 50px;
+  transform: translate(1%, -250%);
+  border-radius: 8px;
+  border: none;
+  background-color: white;
+  padding-block-start: 1%;
+  font-size: 10px;
+}
+.color {
+  color: hsl(236, 33%, 92%);
+}
+.none {
+  display: none;
+}
+.completed {
+  transform: translate(60%, -180%);
+  color: hsl(236, 9%, 61%);
+}
+.allDiv {
+  padding: 1%;
+  margin-bottom: 2%;
+  border-bottom: 2px solid black;
+  margin-inline: auto;
+  width: 250px;
+  height: 50px;
+  transform: translate(1%, -250%);
+  border-radius: 8px;
+  border: none;
+  background-color: white;
+  padding-block-start: 1%;
+  font-size: 13px;
+}
+.active {
+  transform: translate(35%, -180%);
+}
+.allText {
+  transform: translate(10%, -15%);
+}
+.completeds {
+  transform: translate(60%, -360%);
+}
+.par {
+  margin-left: 2%;
+}
+.secondDiv {
+  display: none;
+}
+.allDiv {
+  display: none;
+}
